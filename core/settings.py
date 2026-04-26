@@ -84,9 +84,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'pt-br'
+LANGUAGE_CODE = 'pt-br' # Interface em Português
 
-TIME_ZONE = 'America/Recife'
+TIME_ZONE = 'America/Recife' # Horário correto para sua região (Paraíba)
 
 USE_I18N = True
 
@@ -99,12 +99,12 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static' # Onde ficam o CSS e JS customizados
 ]
 
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'solicitacao_list'
-LOGOUT_REDIRECT_URL = 'login'
+LOGIN_URL = 'login' # Onde o usuário cai se não estiver logado
+LOGIN_REDIRECT_URL = 'solicitacao_list' # Para onde ele vai após logar
+LOGOUT_REDIRECT_URL = 'login' # Para onde ele vai após sair
 
 TEMPLATES = [
     {
